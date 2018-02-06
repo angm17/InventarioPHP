@@ -1,0 +1,261 @@
+*{
+
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#contenedor {
+	background-color: white;
+	font-family: "Roboto", sans-serif;
+	margin: 0 auto;
+	margin-top: 2%;
+	width: 900px;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+  overflow:auto;
+  padding-bottom: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: black;
+}
+
+
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+ 
+}
+
+.campo{
+  outline: 0;
+  background: #f2f2f2;
+  width: 280px;
+  border: 0;
+  margin: 10px 10px 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.resultado	{
+	height: 60px;
+	width: 280px;
+	margin: 10px auto;
+	border: 2px solid black;
+	border-radius: 4px;
+
+}
+.resultados{
+	width: auto;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	
+
+}
+
+form .seleccion{
+	padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+
+#opciones{
+
+  border: 1px solid black;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 10px;
+
+}
+
+#opciones ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+
+}
+
+
+
+#opciones li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#opciones li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#opciones li a.active {
+    color: white;
+    background-color: gray;
+}
+#inicio {
+  margin: 10px 10px 10px 10px;
+
+
+}
+#inicio table{
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+
+
+
+}
+
+#inicio table thead{
+ background: gray;
+ text-align: center;
+}
+#inicio table tfoot{
+ 
+}
+.tabla{
+ text-align: left;
+}
+#inicio table td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#inicio table tr {
+  border: 1px solid black;
+}
+
+#buscador {
+  float: right;
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#opciones form{
+  display: inline-block;
+}
+
+#opciones li:last-child > form{
+  margin: 10px;
+}
+
+#opciones li:last-child{
+  float:right;
+}
+
+
+#paginador  {
+  margin-top: 10px;
+  float: right;
+}
+
+#paginador ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+
+}
+
+
+
+#paginador  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#paginador li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+#paginador  li a.active {
+    color: white;
+    background-color: gray;
+}
+#registrar {
+  margin: 10px 350px 10px 350px;/*
+  margin-top:10px;
+  margin-left:350px;
+  margin-bottom: 10px;*/
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+
+#registrar form input{
+  display: block;
+  margin:5px;
+}
+
+
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+.opinvi {
+ float: left;}
+
+ .opcion {
+  margin: 2px;
+}
