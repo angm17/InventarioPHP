@@ -1,8 +1,8 @@
 <?php
 
 
-require "/db/connect.php";
-require "/modulos/funciones.php";
+require "./db/connect.php";
+require "./modulos/funciones.php";
 
 $buscador = false;
 $sesion = true;
@@ -10,17 +10,6 @@ if (isset($_GET["buscar"])) {
 	$buscar = $_GET["buscar"];
 	$buscador = true;
 	}
-/*
-$page= "inicio";
-$accion = "inventario";
-
-if (isset($_GET["page"])) {
-	$page = $_GET["page"];
-}
-if (isset($_GET["accion"])) {
-	$accion = $_GET["accion"];
-}
-*/
 if(!isset($_SESSION['sesion'])){
     $page = "inicio";
     $accion = "login";
@@ -50,7 +39,7 @@ if(!isset($_SESSION['sesion'])){
 		</ul>
 
 		<?php 
-		if(!@require_once("/modulos/".$page.".php")) throw new Exception("Error al cargar '".$page.".php'");
+		if(!@require_once("./modulos/".$page.".php")) throw new Exception("Error al cargar '".$page.".php'");
 		?>
 	</div>
 </body>

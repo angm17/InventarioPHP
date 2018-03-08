@@ -3,7 +3,7 @@ $error = false;
 if (isset($_POST["enviar"])) {
 	$usuario = $_POST["user"];
 	$password = $_POST["password"];
-	$login = $db->query("SELECT * FROM usuario WHERE usuario = '$usuario' and password = '$password'");
+	$login = $db->query("SELECT * FROM user WHERE user = '$usuario' and password = '$password'");
 	if ($login->num_rows == 1) {
 		$_SESSION['sesion'] = $usuario;
 		header("location: index.php");
